@@ -66,7 +66,6 @@ end
 
 ```
 > Note: Like any other event you have to register it beforehand 
-> 
 > ```GameEventsOnline.onPlayerJoin.AddListener(self,"onPlayerJoin")```
 
 
