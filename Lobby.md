@@ -36,8 +36,8 @@ Instantiating a Game Object in RavenM works like it would normally, but the diff
 function Script:Start()
   self.cube = self.targets.cube
   -- All spawnable prefabs have to be added here beforehand
-	Lobby.AddNetworkPrefab(self.cube)
-	Lobby.PushNetworkPrefabs() 
+  Lobby.AddNetworkPrefab(self.cube)
+  Lobby.PushNetworkPrefabs() 
 end
 function Script:Update()
   if(Input.GetKeyDown(KeyCode.K)) then -- Example Code
