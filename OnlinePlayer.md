@@ -16,9 +16,9 @@ OnlinePlayer
 | `SendPacketToServer(data,id, reliable)`      | Sends a packet to the server       |
 | `PushChatMessage(message)`   | Send a chat message as the user    |
 | `PushCommandChatMessage(message,color,teamOnly,sendToAll)`   | Send a command message   |
-
-
-
+| `SetNameTagForActor(actor,newTag)`   | Change the name tag of a player (client side only)   |
+| `ResetNameTags()`   | Resets all of the name tags to the original (client side only)   |
+| `GetPlayerFromName(name)`   | Return the actor of a player by name   |
 
 ## Details
 
