@@ -36,8 +36,24 @@ Sends a packet to the server.
 ```lua
 OnlinePlayer.SendPacketToServer(Player.actor.name .. ";;" .. self.killCounter,48,true)
 ```
-> Note: The Event GameEventsOnline.onReceivePacket(id,data) can be used to check for received packets
-> Note: The Event GameEventsOnline.onSendPacket(id,data) can be used to check for send packets
+
+## Events
+
+`GameEventsOnline.onReceivePacket` invoked when a packet is received
+
+`GameEventsOnline.onSendPacket` invoked when a packet is sent
+
+```lua
+function Script:onReceivePacket(id,data)
+	print(id .. " -> " .. tostring(data))
+end
+function Script:onSendPacket(id,data)
+	print(id .. " -> " .. tostring(data))
+end
+
+```
+> Note: Like any other event you have to register it beforehand 
+> ```GameEventsOnline.onReceivePacket.AddListener(self,"onReceivePacket")```
 
 
 
