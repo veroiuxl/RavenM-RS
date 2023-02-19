@@ -48,8 +48,11 @@ end
 ## Events
 
 `GameEventsOnline.onPlayerJoin` invoked when a player joins the game
+
 `GameEventsOnline.onPlayerDisconnect` invoked when a player leaves the game
+
 `GameEventsOnline.onReceiveChatMessage` invoked when a chat message was received
+
 ```lua
 function Script:onPlayerJoin(actor)
 	print(actor.name .. " joined the game")
@@ -63,6 +66,7 @@ end
 
 ```
 > Note: Like any other event you have to register it beforehand 
+> 
 > ```GameEventsOnline.onPlayerJoin.AddListener(self,"onPlayerJoin")```
 
 
