@@ -10,4 +10,5 @@ If you find any bugs or don't know how something works contact me on Discord
 
 [CommandManager](https://github.com/veroiuxl/RavenM-RS/blob/main/CommandManager.md)
 
-
+### Todo
+- [ ] Syncing instantiated game objects
